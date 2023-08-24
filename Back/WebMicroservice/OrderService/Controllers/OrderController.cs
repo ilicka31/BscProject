@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Common.Entities.Order;
+using MassTransit;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OrderService.DTOs;
@@ -13,11 +15,14 @@ namespace OrderService.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IOrderService _orderService;
+        private readonly IPublishEndpoint _publishEndpoint;
 
-        public OrderController(IOrderService orderService)
+        public OrderController(IOrderService orderService, IPublishEndpoint publishEndpoint)
         {
             _orderService = orderService;
+            _publishEndpoint = publishEndpoint;
         }
+
         [HttpPut("new-order")]
         [Authorize(Roles = "BUYER")]
         public async Task<IActionResult> NewOrder([FromBody] OrderDTO orderDTO)
@@ -85,6 +90,15 @@ namespace OrderService.Controllers
         public async Task<IActionResult> AddItemsToOrder([FromBody] ItemsOrderDTO itemsOrderDTO)
         {
             await _orderService.AddOrderItems(itemsOrderDTO.OrderId, itemsOrderDTO.OrderItems);
+            foreach (var item in itemsOrderDTO.OrderItems)
+            {
+                await _publishEndpoint.Publish<ProductQuantity>(new ProductQuantity()
+                {
+                    Id = item.ProductId,
+                    Quantity = item.Quantity
+
+                }); 
+            }        
             return Ok();
         }
 

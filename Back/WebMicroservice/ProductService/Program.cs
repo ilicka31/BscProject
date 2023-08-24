@@ -1,4 +1,5 @@
 using AutoMapper;
+using Common.Entities.Order;
 using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -57,6 +58,7 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 builder.Services.AddMassTransit(x => {
     x.AddConsumer<UserCreatedConsumer>();
+    x.AddConsumer<ProductQuantityConsumer>();
     x.UsingRabbitMq((context, cfg) =>
     {
         cfg.Host(new Uri("rabbitmq://localhost:5672"), h => {
@@ -68,7 +70,10 @@ builder.Services.AddMassTransit(x => {
         {
             e.ConfigureConsumer<UserCreatedConsumer>(context);
        });
-    
+        cfg.ReceiveEndpoint("product-quantity-product", e =>
+        {
+            e.ConfigureConsumer<ProductQuantityConsumer>(context);
+        });
     });
 
 });

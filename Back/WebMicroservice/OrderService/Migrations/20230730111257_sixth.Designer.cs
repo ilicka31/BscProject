@@ -131,7 +131,7 @@ namespace OrderService.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
-                    b.Property<long>("ProductId")
+                    b.Property<long>("ArticleId")
                         .HasColumnType("bigint");
 
                     b.Property<int>("Quantity")

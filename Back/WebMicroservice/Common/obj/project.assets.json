@@ -1152,11 +1152,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\Common\\Common.csproj",
+      "projectPath": "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\Common\\Common.csproj",
       "packagesPath": "C:\\Users\\Jelena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\Common\\obj\\",
+      "outputPath": "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jelena\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -79,7 +79,7 @@ export default function Checkout() {
         orderId: orderId,
         orderItems: cartArticles.map(article => ({
           quantity: article.quantity,
-          articleId: article.id,
+          productId: article.id,
         })),
       }
       console.log(responseBody);

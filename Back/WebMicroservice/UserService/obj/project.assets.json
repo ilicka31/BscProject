@@ -5100,11 +5100,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\UserService\\UserService.csproj",
+      "projectUniqueName": "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\UserService\\UserService.csproj",
       "projectName": "UserService",
-      "projectPath": "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\UserService\\UserService.csproj",
+      "projectPath": "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\UserService\\UserService.csproj",
       "packagesPath": "C:\\Users\\Jelena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\UserService\\obj\\",
+      "outputPath": "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\UserService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jelena\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5121,8 +5121,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\Common\\Common.csproj"
+            "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\Common\\Common.csproj"
             }
           }
         }

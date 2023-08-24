@@ -21,11 +21,6 @@ namespace OrderService.Consumers
             {
                 var _dbContext = scope.ServiceProvider.GetRequiredService<OrderDBContext>();
 
-                var newPD = new ProductDeleted
-                {
-                    Id = context.Message.Id,
-                    SellerId = context.Message.SellerId
-                };
                 var product = _dbContext.ProductInfos.Find(context.Message.Id);
                 if (product != null)
                 {

@@ -4717,11 +4717,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\OrderService\\OrderService.csproj",
+      "projectUniqueName": "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\OrderService\\OrderService.csproj",
       "projectName": "OrderService",
-      "projectPath": "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\OrderService\\OrderService.csproj",
+      "projectPath": "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\OrderService\\OrderService.csproj",
       "packagesPath": "C:\\Users\\Jelena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\OrderService\\obj\\",
+      "outputPath": "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\OrderService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jelena\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4738,8 +4738,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Jelena\\Desktop\\WEB\\WebMicroservice\\Common\\Common.csproj"
+            "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\Jelena\\Desktop\\BscProject\\Back\\WebMicroservice\\Common\\Common.csproj"
             }
           }
         }
