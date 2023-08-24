@@ -22,8 +22,8 @@ Nakon uspesnog pokretanja solution-a, potrebno je kreirati admina aplikacije, pr
         "username": "admin",
         "email": "admin@admin.com",
         "password": "string",
-        "birthDate": "2023-08-03T18:09:34.623Z",
-        "address": "string",
+        "birthDate": "2000-07-31T18:00:00.000Z",
+        "address": "address",
         "type": 2
     }
 
